@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="container d-flex flex-column align-items-center justify-content-center py-5">
+    <h2 class="text-center mb-5">Kompyuter o'ylagan sonni topa olasizmi? 🤔</h2>
+    <form class="user-number-form d-flex align-items-center justify-content-center mb-5"
+      action="https://echo.htmlacademy.ru" method="POST">
+      <div class="d-flex align-items-center form-group mr-5 mb-0">
+        <label class="mb-0 mr-3 text-nowrap" for="number-input">1 va 100 orasidagi son
+          kiriting:</label>
+        <input class="user-number-input form-control" id="number-input" type="number" name="number" placeholder="1"
+          autocomplete="off" required>
+      </div>
+      <button class="user-number-button btn btn-info" type="submit">Tekshirish</button>
+    </form>
+
+    <div class="results-div text-center h4">
+      <p>Urunishlar soni: <span class="attempts-span">6</span> ta</p>
+      <p class="computer-choice-wrapper d-none">Kompyuter o'ylagan son: <span class="computer-choice">N</span></p>
+      <p>Siz kiritgan son: <span class="user-choice">😎</span></p>
+      <p class="result"></p>
+    </div>
+
+    <button class="reset-button btn btn-warning" type="button">Qaytadan boshlash</button>
+  </div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
