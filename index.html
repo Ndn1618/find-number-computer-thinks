@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <title>Find the random number</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +20,7 @@
         <label class="mb-0 mr-3 text-nowrap" for="number-input">1 va 100 orasidagi son
           kiriting:</label>
         <input class="user-number-input form-control" id="number-input" type="number" name="number" placeholder="1"
-          autocomplete="off" required>
+          min="1" max="100" autocomplete="off" required>
       </div>
       <button class="user-number-button btn btn-info" type="submit">Tekshirish</button>
     </form>
